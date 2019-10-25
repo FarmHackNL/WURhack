@@ -3,12 +3,12 @@ import os
 import re
 
 # Point the DATA_DIR to where your csv files are 
-DATA_DIR = 'data'
+DATA_DIR = '../../../data/'
 LELY_OUTFILE = 'lely_combined.csv'
 ROVECOM_OUTFILE = 'rovecom_combined.csv'
 
-ROVECOM_PATTERN = r'(\d+)_(R|r)ovecom.csv'
-LELY_PATTERN = r'Lely_dataset_\[(\d+)\].csv'
+ROVECOM_PATTERN = r'(\d+)_(R|r)ovecom.csv$'
+LELY_PATTERN = r'Lely_dataset_\[(\d+)\].csv$'
 
 LELY_COLNAMES = [
 "FarmNumber","Customer","LifeNumber","Date_yyyymmdd","Lactation","LactationDays","CalvingDate_yyyymmdd","DryOffDate_yyyymmdd","TransferDate_yyyymmdd","DayProduction","Mastitis","Colostrum","ConductivityAttentions","SCC","FatIndication","ProteinIndication","Weight","Milkings","Refusals","Failures","MilkTimeAvg","DeadMilkTimeAvg","MilkSpeed","Rumination","Feed_1","Feed_2","Feed_3","Feed_4","AmountSet1","AmountSet2","AmountSet3","AmountSet4","TotalIntake1","TotalIntake2","TotalIntake3","TotalIntake4","RestFeed1","RestFeed2","RestFeed3","RestFeed4"]
