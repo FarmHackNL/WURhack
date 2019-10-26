@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                               http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>nl.farmhack</groupId>
+	<artifactId>ConvertGPS</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<geotools.version>23-SNAPSHOT</geotools.version>
+
+		<jts.version>1.16.1</jts.version>
+		<jaiext.version>1.1.12</jaiext.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.geotools</groupId>
+			<artifactId>gt-shapefile</artifactId>
+			<version>${geotools.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.geotools</groupId>
+			<artifactId>gt-swing</artifactId>
+			<version>${geotools.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.geotools</groupId>
+			<artifactId>gt-cql</artifactId>
+			<version>${geotools.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.geotools</groupId>
+			<artifactId>gt-epsg-hsql</artifactId>
+			<version>${geotools.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>net.sourceforge.javacsv</groupId>
+			<artifactId>javacsv</artifactId>
+			<version>2.0</version>
+		</dependency>
+
+<!-- https://mvnrepository.com/artifact/jgridshift/jgridshift-core -->
+<dependency>
+    <groupId>jgridshift</groupId>
+    <artifactId>jgridshift-core</artifactId>
+    <version>1.2</version>
+</dependency>
+
+
+
+		<!-- https://mvnrepository.com/artifact/javax.measure/jsr-275 -->
+		<dependency>
+			<groupId>javax.measure</groupId>
+			<artifactId>jsr-275</artifactId>
+			<version>0.9.2</version>
+		</dependency>
+
+		<!-- <dependency> <groupId>javax.measure</groupId> <artifactId>unit-api</artifactId> 
+			<version>1.0</version> </dependency> -->
+		<!-- https://mvnrepository.com/artifact/com.vividsolutions/jts -->
+		<dependency>
+			<groupId>com.vividsolutions</groupId>
+			<artifactId>jts</artifactId>
+			<version>1.13</version>
+		</dependency>
+
+	</dependencies>
+
+	<repositories>
+		<repository>
+			<id>maven2-repository.dev.java.net</id>
+			<name>Java.net repository</name>
+			<url>http://download.java.net/maven/2</url>
+		</repository>
+		<repository>
+			<id>osgeo</id>
+			<name>Open Source Geospatial Foundation Repository</name>
+			<url>http://download.osgeo.org/webdav/geotools/</url>
+		</repository>
+		<repository>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+			<id>boundless</id>
+			<name>Boundless Maven Repository</name>
+			<url>http://repo.boundlessgeo.com/main</url>
+		</repository>
+	</repositories>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
