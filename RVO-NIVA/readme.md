@@ -6,3 +6,9 @@ Different team members are working on the current topics:
 - Reprojecting the coordinate system from Longitude/Latitude to EPSG 28993 (Dutch coordinate system)
 - Adding metadata (if required)
 - Pushing the data through SOAP api.
+
+Results are published in subfolders:
+
+- ConvertGPS for the code converting GPS coordinate data to the correct coordinate system used in NL
+- Shapefile-master as a prototype for determining the polygon from a point data set (shapefile)
+- Polygon conversion as a V2 for the shapefile to polygon conversion, including a web interface.
