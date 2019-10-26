@@ -1,0 +1,16 @@
+{
+  "name": "shapefile",
+  "version": "1.0.0",
+  "description": "convert shapefile points extent to polygon",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JustIntoCoding",
+  "license": "ISC",
+  "dependencies": {
+    "concaveman": "^1.1.1",
+    "shpjs": "^3.4.3"
+  }
+}
